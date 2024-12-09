@@ -1,3 +1,29 @@
+.section {
+    padding: 4rem 0 1rem 0;
+
+    &__title {
+        font-size: 1.25rem;
+        color: var(--title-color);
+        margin-bottom: 1rem;
+
+        span {
+            color: var(--primary-color);
+        }
+
+        &-center {
+            @extend .section__title;
+            text-align: center;
+        }
+    }
+}
+
+.svg {
+    &__img {
+        width: 400px;
+        justify-self: center;
+    }
+}
+
 .container {
     width: 90vw;
     max-width: 1170px;
