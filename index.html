@@ -1,51 +1,294 @@
 <!DOCTYPE html>
 <html dir="rtl" lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>webprog.io || sass project</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>mahdi || sass project</title>
 
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="./css/bootstrap-icons.css">
-    <!-- Css File -->
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-    <header class="header">
-        <nav class="nav container">
-            <a class="nav__logo" href="#">mahdi</a>
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="./css/bootstrap-icons.css" />
+        <!-- Css File -->
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a class="nav__logo" href="#">mahdi</a>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">صفحه اصلی</a>
-                    </li>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#home">صفحه اصلی</a>
+                        </li>
 
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">درباره ما</a>
-                    </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#about">درباره ما</a>
+                        </li>
 
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">خدمات</a>
-                    </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#services">خدمات</a>
+                        </li>
 
-                    <li class="nav__item">
-                         <a class="nav__link" href="#">ارتباط با ما</a>
-                    </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#contact"
+                                >ارتباط با ما</a
+                            >
+                        </li>
 
-                    <i class="bi bi-toggle-off"></i>
-                </ul>
+                        <i class="change-theme bi bi-toggle-off" id="theme-button"></i>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bi bi-list-nested"></i>
+                </div>
+
+                <a class="button button__header" href="#">لورم ایپسوم</a>
+            </nav>
+        </header>
+
+        <section class="home section" id="home">
+            <div class="home__container container">
+                <article class="svg__img home__img">
+                    <img src="./images/1.svg" alt="home-image" />
+                </article>
+
+                <article class="home__info">
+                    <h1 class="home__title">
+                        لورم ایپسوم متن ساختگی <br />
+                        <span>لورم ایپسوم</span>
+                    </h1>
+                    <p class="home__description">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        چاپ و با استفاده از طراحان گرافیک است.
+                    </p>
+
+                    <a href="#" class="button">لورم ایپسوم</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="about__container container">
+                <article class="about__info">
+                    <h1 class="section__title">
+                        لورم ایپسوم متن ساختگی <br />
+                        <span>درباره ما</span>
+                    </h1>
+                    <p class="about__description">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        چاپ و با استفاده از طراحان گرافیک است.
+                    </p>
+                </article>
+
+                <article class="svg__img about__img">
+                    <img src="./images/2.svg" alt="about-image" />
+                </article>
+            </div>
+        </section>
+
+        <section class="support section">
+            <div class="support__container container">
+                <article class="support__info">
+                    <h1 class="section__title">
+                        لورم ایپسوم متن ساختگی <br />
+                        <span>پشتیبانی</span>
+                    </h1>
+                    <p class="support__description">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        چاپ و با استفاده از طراحان گرافیک است.
+                    </p>
+                </article>
+
+                <article class="svg__img support__img">
+                    <img src="./images/3.svg" alt="support-image" />
+                </article>
+            </div>
+        </section>
+
+        <section class="services section" id="services">
+            <h2 class="section__title-center">لورم ایپسوم متن ساختگی</h2>
+
+            <div class="services__container container">
+                <article class="services__info">
+                    <h3 class="services__title">لورم ایپسوم</h3>
+                    <i class="services__icon bi bi-browser-chrome"></i>
+                    <p class="services__description">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        چاپ و با استفاده از طراحان گرافیک است.
+                    </p>
+
+                    <div>
+                        <a href="#" class="button button-link">مشاهده بیشتر</a>
+                    </div>
+                </article>
+
+                <article class="services__info">
+                    <h3 class="services__title">لورم ایپسوم</h3>
+                    <i class="services__icon bi bi-browser-edge"></i>
+                    <p class="services__description">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        چاپ و با استفاده از طراحان گرافیک است.
+                    </p>
+                    <div>
+                        <a href="#" class="button button-link">مشاهده بیشتر</a>
+                    </div>
+                </article>
+
+                <article class="services__info">
+                    <h3 class="services__title">لورم ایپسوم</h3>
+                    <i class="services__icon bi bi-browser-firefox"></i>
+                    <p class="services__description">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        چاپ و با استفاده از طراحان گرافیک است.
+                    </p>
+                    <div>
+                        <a href="#" class="button button-link">مشاهده بیشتر</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="app section">
+            <div class="app__container container">
+                <article class="app__info">
+                    <h2 class="app__title section__title-center">
+                        لورم ایپسوم متن ساختگی <br /><span>برنامه ها</span>
+                    </h2>
+                    <p class="app__description">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون
+                        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </p>
+
+                    <div class="app__buttons">
+                        <a class="button button-flex" href="#">
+                            App Store
+                            <i class="bi bi-apple"></i>
+                        </a>
+
+                        <a href="#" class="button button-flex">
+                            Google Play
+                            <i class="bi bi-google-play"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="svg__img app__img">
+                    <img src="./images/4.svg" alt="app-image" />
+                </article>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="contact__container container">
+                <article>
+                    <h2 class="contact__title section__title-center">
+                        تماس با ما
+                    </h2>
+                    <p class="contact__description">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون
+                        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </p>
+                </article>
+
+                <article>
+                    <ul class="contact__info">
+                        <li class="contact__address">
+                            شماره تماس:
+                            <span class="contact__information"
+                                >000 - 000 - 0910</span
+                            >
+                        </li>
+                        <li class="contact__address">
+                            ایمیل:
+                            <span class="contact__information"
+                                >mahdi@info.com</span
+                            >
+                        </li>
+                        <li class="contact__address">
+                            آدرس:
+                            <span class="contact__information"
+                                >لورم ایپسوم متن ساختگی</span
+                            >
+                        </li>
+                    </ul>
+                </article>
+
+                <article>
+                    <div class="contact__button">
+                        <a href="#" class="button">تماس با ما</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <footer class="footer section">
+            <div class="footer__container container">
+                <article class="footer__content">
+                    <a href="#" class="footer__logo">mahdi</a>
+                    <p class="footer__description">لورم ایپسوم متن ساختگی</p>
+                </article>
+
+                <article class="footer__content">
+                    <h3 class="footer__title">خدمات ما</h3>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">قیمت ها </a></li>
+                        <li><a href="#" class="footer__link">تخفیف ها</a></li>
+                        <li><a href="#" class="footer__link">گزارش باگ</a></li>
+                        <li>
+                            <a href="#" class="footer__link">قوانین و مقررات</a>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="footer__content">
+                    <h3 class="footer__title">شرکت ما</h3>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">مقالات</a></li>
+                        <li><a href="#" class="footer__link">قرارداد ها</a></li>
+                        <li>
+                            <a href="#" class="footer__link">لورم ایپسوم</a>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="footer__content">
+                    <h3 class="footer__title">لورم ایپسوم</h3>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">پشتیبانی</a></li>
+                        <li>
+                            <a href="#" class="footer__link">پرسش و پاسخ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">حمایت از ما</a>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="footer__social">
+                    <a href="#" class="footer__social-link"
+                        ><i class="bi bi-telegram"></i
+                    ></a>
+                    <a href="#" class="footer__social-link"
+                        ><i class="bi bi-twitter"></i
+                    ></a>
+                    <a href="#" class="footer__social-link"
+                        ><i class="bi bi-instagram"></i
+                    ></a>
+                </article>
             </div>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="bi bi-list-nested"></i>
-            </div>
+            <p class="footer__copy">
+                &#169; کلیه‌ی حقوق نزد وب پروگ محفوظ است.
+            </p>
+        </footer>
 
-            <a class="button button__header" href="#">لورم ایپسوم</a>
-        </nav>
-    </header>
+        <a class="scrollup" id="scroll-up" href="#">
+            <i class="scrollup__icon bi bi-arrow-up"></i>
+        </a>
 
-
-    <script src="./js/app.js"></script>
-</body>
+        <script src="./js/app.js"></script>
+    </body>
 </html>
