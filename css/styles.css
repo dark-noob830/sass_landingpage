@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/vazir/Vazir-FD-WOL.woff") format("woff2"), url("../fonts/vazir/Vazir-FD-WOL.woff") format("woff"), url("../fonts/vazir/Vazir-FD-WOL.ttf") format("truetype");
+}
+:root {
+  --hue: 227;
+  --sat: 47%;
+  --primary-color: hsl(var(--hue), var(--sat), 52%);
+  --primary-color-light: hsl(var(--hue), var(--sat), 85%);
+  --primary-color-lighten: hsl(var(--hue), var(--sat), 80%);
+  --secondary-color: hsl(var(--hue), var(--sat), 53%);
+  --title-color: hsl(var(--hue), 4%, 15%);
+  --text-color: hsl(var(--hue), 4%, 35%);
+  --text-color-light: hsl(var(--hue), 4%, 65%);
+  --body-color: hsl(var(--hue), 0%, 100%);
+  --container-color: #fff;
+  --ff-primary: "vazir", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff-primary);
+  background: var(--body-color);
+  line-height: 2;
+  font-size: 1rem;
+  text-align: right;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);
+  line-height: 2;
+}
+
+p {
+  color: var(--text-color);
+  line-height: 2;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
